@@ -56,7 +56,7 @@ void loop() {
     //tape = Serial.readStringUntil('\n');
     rute = Serial.readStringUntil(',');
     tiempo = Serial.readStringUntil(',');
-    tape = Serial.readStringUntil('\n');
+    tape = Serial.readStringUntil('\n')+" ";
     while(Serial.available() < 1)
       {
             matrix.drawChar(4,1,':', HIGH, LOW, 1);
